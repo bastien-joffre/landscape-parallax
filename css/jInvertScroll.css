@@ -1,0 +1,74 @@
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body
+{
+    overflow-x: hidden;
+}
+
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+html,
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1
+{
+  font-size: 20px;
+  font-weight: normal;
+  color: #2e6e80;
+}
+
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+.horizon
+{
+  z-index: 1;
+  width: 2400px;
+}
+
+.middle
+{
+  z-index: 500;
+  width: 3200px;
+}
+
+.front
+{
+  z-index: 1000;
+  width: 4000px;
+}
+
+.mist
+{
+  z-index: 750;
+  width: 3600px;
+}
+
+.mist-back
+{
+  z-index: 250;
+  width: 2600px;
+}
+
+.background
+{
+  z-index: 0;
+  width: 1920px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
