@@ -64,6 +64,23 @@ h1
   width: 2600px;
 }
 
+@media screen and (max-width: 1000px) {
+  .horizon
+  {
+    max-height: 70vh;
+  }
+
+  .middle
+  {
+    max-height: 50vh;
+  }
+
+  .front
+  {
+    max-height: 30vh;
+  }
+}
+
 .background
 {
   z-index: 0;
