@@ -15,6 +15,11 @@ body
     left: 0;
 }
 
+img
+{
+  vertical-align: bottom;
+}
+
 html,
 body
 {
@@ -61,7 +66,7 @@ h1
 .mist-back
 {
   z-index: 250;
-  width: 2600px;
+  width: 2500px;
 }
 
 @media screen and (max-width: 1000px) {
